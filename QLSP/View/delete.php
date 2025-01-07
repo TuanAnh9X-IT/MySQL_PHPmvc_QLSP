@@ -25,20 +25,23 @@ if (isset($_GET['id'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xóa sản phẩm</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
-<div class="container">
-    <h1 class="mt-5">Xóa sản phẩm</h1>
-    <?php if (isset($error)): ?>
-        <div class="alert alert-danger"><?php echo $error; ?></div>
-    <?php endif; ?>
-    <p>Bạn có chắc chắn muốn xóa sản phẩm này không?</p>
-    <a href="list.php" class="btn btn-secondary">Quay lại</a>
-</div>
+    <div class="container">
+        <h1 class="mt-5">Xóa sản phẩm</h1>
+        <?php if (isset($error)): ?>
+            <div class="alert alert-danger"><?php echo $error; ?></div>
+        <?php endif; ?>
+        <p>Bạn có chắc chắn muốn xóa sản phẩm này không?</p>
+        <a href="list.php" class="btn btn-secondary">Quay lại</a>
+    </div>
 </body>
+
 </html>
